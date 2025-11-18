@@ -82,11 +82,16 @@ dpkg -l | grep sfml
 
 From the repository root, run:
 
+
 ```bash
+cd breakout_game
 g++ -std=c++17 -O2 breakout_game.cpp background.cpp ball.cpp brick.cpp brick_handler.cpp paddle.cpp -o breakout_game -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 ```
 
-Then execute:./breakout_game
+Then execute:
+```bash
+./breakout_game
+```
 ## 📌 Notes- All apps use SFML 3.0.2 with C++17.
 - Designed for incremental learning: from simple window creation to a full arcade game.
 - Tested on Windows (MSYS2 MINGW64), but also works on Linux with libsfml-dev.
