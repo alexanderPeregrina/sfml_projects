@@ -54,7 +54,7 @@ pacman -S mingw-w64-x86_64-SFML
 ```
 
 4. **Verify Installation**
-   ```bash
+```bash
 g++ --version
 pacman -Q | grep SFML
 ```
@@ -62,18 +62,18 @@ pacman -Q | grep SFML
 ## Linux (Debian/Ubuntu-based)
 
 1. Install C++ Compiler
- ```bash
+```bash
 sudo apt update
 sudo apt install g++ build-essential
 ```
 
 2. Install SFML
- ```bash
+```bash
  sudo apt install libsfml-dev
 ```
 
 3. Verify Installation
- ```bash
+```bash
 g++ --version
 dpkg -l | grep sfml
 ```
@@ -82,7 +82,7 @@ dpkg -l | grep sfml
 
 From the repository root, run:
 
- ```bash
+```bash
 g++ -std=c++17 -O2 breakout_game.cpp background.cpp ball.cpp brick.cpp brick_handler.cpp paddle.cpp -o breakout_game -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 ```
 
